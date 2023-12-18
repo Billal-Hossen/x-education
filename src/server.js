@@ -1,12 +1,12 @@
 require('dotenv').config()
 const connectDB = require('./db')
 const app = require('./app')
-
+const port = process.env.PORT || 8080
 const main = async () => {
   try {
     await connectDB()
-    app.listen(8000, () => {
-      console.log('App listing on http://localhost:4000')
+    app.listen(port, () => {
+      console.log(`App listing on http://localhost:${port}`)
     })
 
   } catch (error) {

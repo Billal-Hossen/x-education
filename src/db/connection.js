@@ -6,8 +6,7 @@ connectionURL = connectionURL.replace('<password>', process.env.DB_PASS)
 
 const connectDB = async () => {
   await mongoose.connect(connectionURL, {
-    dbName: process.env.DB_NAME, useNewUrlParser: true,
-    useUnifiedTopology: true,
+    dbName: process.env.DB_NAME
   })
 
   console.log('Database connection successful')

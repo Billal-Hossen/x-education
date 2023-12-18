@@ -25,7 +25,7 @@ const userSchema = new Schema({
     maxLength: [100, "User  is too long."],
     trim: true
   },
-  roles: {
+  role: {
     type: String,
     enum: ['admin', 'user'],
     default: 'user'
