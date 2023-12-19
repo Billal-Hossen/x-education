@@ -20,3 +20,4 @@ First of all register in our application using name, email password, and role. r
 2. The admin is able to see all of the courses.
 3. The admin can see a single course.
 4. The admin can update the existing course.
+5. The admin can delete a course.
